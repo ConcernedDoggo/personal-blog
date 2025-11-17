@@ -1,6 +1,7 @@
 import Image from "next/image";
 import AboutCard from "@/components/AboutCard";
 import ProjectSection from "@/components/ProjectSection";
+import ContactCard from "@/components/ContactCard";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
     <AboutCard/>
     </section>
     <ProjectSection/>
+    <ContactCard />
     </>
   );
 }
