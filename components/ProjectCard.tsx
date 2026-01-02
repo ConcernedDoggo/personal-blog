@@ -7,6 +7,30 @@ import { LuGithub } from "react-icons/lu";
 
 const Projects = [
     {
+        _id: 4,
+        img: '/LoadBalancer.jpg',
+        title: "Multithreaded C++ Loadbalancer",
+        description: "🚀 High-performance C++ L7 Load Balancer. Features multi-threading, async health checks, zero-downtime hot-reloading (EFSW), and thread-safe observability. Built with Strategy & Singleton patterns. Libraries: Crow, Cpr, EFSW, toml++.",
+        liveLink: "",
+        githubLink: "https://github.com/harshal24-chavan/LoadBalancer-CPP"
+    },
+    {
+        _id: 5,
+        img: '/RateLimiter.png',
+        title: "High Performance C++ RateLimiter",
+        description: "High-performance C++20 gRPC Rate Limiter using Redis Lua scripts. ~7k RPS @ 27ms p99.",
+        liveLink: "",
+        githubLink: "https://github.com/harshal24-chavan/RateLimiter-CPP"
+    },
+    {
+        _id: 6,
+        img: '/CryptoInsight.png',
+        title: "CryptoInsight",
+        description: "A crypto analytics platform. Featuring a React frontend and a Go/Redis backend designed for high-performance data fetching and optimized API consumption.",
+        liveLink: "https://crypto-insight1.netlify.app/",
+        githubLink: "https://github.com/harshal24-chavan/CryptoInsight"
+    },
+    {
         _id: 1,
         img: '/SignMeUp.png',
         title: "SignMeUp",
@@ -41,8 +65,8 @@ export default function ProjectCard() {
                         <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                         <p className="">{project.description}</p>
                         <div className="flex gap-6 mt-4">
-                            <Link href={project.liveLink} className="flex gap-2 items-center hover:font-semibold"> Live Demo <GoLinkExternal /> </Link>
-                            <Link href={project.githubLink} className="flex gap-2 items-center hover:font-semibold"> Github <LuGithub /> </Link>
+                            {(project.liveLink != "")? <Link href={project.liveLink} target="_blank" className="flex gap-2 items-center hover:font-semibold"> Live Demo <GoLinkExternal /> </Link> : <></>}
+                            <Link href={project.githubLink} target="_blank" className="flex gap-2 items-center hover:font-semibold"> Github <LuGithub /> </Link>
                         </div>
                     </div>
                 </div>
