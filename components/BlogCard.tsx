@@ -6,7 +6,7 @@ import { getSortedArticles } from '@/lib/articles';
 
 export default function BlogCard() {
     const Blogs = getSortedArticles();
-  console.log(Blogs)
+//   console.log(Blogs)
   return (
     <div className='md:grid-cols-2 grid gap-4 justify-center'>
         {Blogs.map(blog => (

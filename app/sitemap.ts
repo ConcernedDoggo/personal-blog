@@ -6,7 +6,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     const baseUrl = 'https://harshalchavan.com';
 
-    const blogDirectory = path.join(process.cwd(), '/blog');
+    const blogDirectory = path.join(process.cwd(), '/articles');
     const fileNames = fs.readdirSync(blogDirectory);
 
     const blogPosts = fileNames.map((fileName) => {
