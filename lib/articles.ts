@@ -34,7 +34,7 @@ export const getSortedArticles = (): ArticleItem[] => {
         const dateOne = moment(a.date, format);
         const dateTwo = moment(b.date, format);
 
-        if (dateOne.isBefore(dateTwo)) {
+        if (dateTwo.isBefore(dateOne)) {
             return -1;
         }
         return 0;
