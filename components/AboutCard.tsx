@@ -18,10 +18,7 @@ export default function AboutCard() {
                 <div className='md:w-2/3  text-lg'>
                     <div className='max-w-[70ch]'>
                         <p className='mb-4'>
-                            Hi there! I'm a web developer with a creative eye and a passion for collaboration. I believe in building websites that not only function flawlessly but also leave a lasting impression. Take a look through my portfolio to see how I blend technical expertise with innovative design to create unique online experiences.
-                        </p>
-                        <p className='mb-4'>
-                            I have a background in Software Engineering and I enjoy solving problems and learning new things. My goal is to build user-friendly and efficient digital experiences.
+                        C++ systems Engineer Specializing in ultra-low-latency architectures, lock-free concurrency, and Linux kernel I/O. Linux kernel & Drogon framework contributor. Obsessed with zero-copy data paths, hardware-aware optimizations and sub 200ns execution.
                         </p>
                         <p className='mb-4'>
                             From coding to chess, football, and treks – I build, strategize, collaborate, and explore.
